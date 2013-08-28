@@ -1,0 +1,378 @@
+/*html5*/
+aside, nav, footer, header, section, article { display: block }
+p,form,blockquote,body,html,input,textarea,h1,h2,h3,h4,h5,h6,caption
+{
+    margin: 0;
+    padding: 0;
+
+}
+caption
+{
+	text-align: left;
+}
+:focus
+{
+	outline: 0;
+}
+a:active,a
+{
+	outline: 0 !important;
+}
+input,textarea
+{
+	font-family: Arial,Helvetica,sans-serif;
+}
+html
+{
+    height: 100%;
+    font-size: 100.01%;
+    font-family: Arial,Helvetica,sans-serif;
+    color: #414141;
+	overflow-y: scroll;
+}
+body
+{
+    min-height: 100%;
+    position: relative;
+    background: white;
+	min-width: 987px;
+	font-size: 12px;
+}
+a
+{
+    color: #0065aa;
+	border-bottom: 1px solid #abcce3;
+	text-decoration: none;
+}
+body a:hover
+{
+    color: #00528a;
+	border-color: #00528a;
+}
+a.light
+{
+    color: #0065aa;
+	border-bottom: 1px solid #abcce3;
+}
+input
+{
+    vertical-align: middle;
+	font-size: 100%;
+}
+input[type=submit],input[type=button],input[type=checkbox],input[type=radio],input[type=file],select,a,button,[onclick]
+{
+    cursor: pointer;
+}
+option
+{
+    cursor: auto;
+}
+label
+{
+    cursor: pointer;
+}
+em
+{
+    font-style: normal;
+}
+img
+{
+    border: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.clear
+{
+    clear: both;
+    height: 0px;
+    font-size: 0;
+    line-height: 0;
+	display: block;
+	float: none;
+}
+h1,h2,h3,h4,h5,h6
+{
+    font-weight: normal;
+    font-size: 100%;
+}
+div,li,ul,form,p,h1,h2,h3,h4,h5,h6{ zoom: 1;}
+aside, nav, footer, header, section { zoom: 1; }
+a *
+{
+    cursor: pointer;
+}
+
+
+.rui-select-done
+{
+	display: none;
+}
+.rui-select
+{
+	display: block;
+	border: 1px solid #545454;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin: 20px;
+	position: relative;
+}
+.ruisel-face
+{
+	padding: 3px 10px;
+	display: block;
+}
+.ruisel-clickable
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	display: block;
+	background: url(data:);
+}
+.ruisel-clickable:focus
+{
+	background: rgba(0,0, 255, 0.1);
+}
+.rui-select b
+{
+	display: none;
+}
+.ruisel-select_options
+{
+	position: absolute;
+	width: 100%;
+	background: white;
+	z-index: 1;
+	overflow: auto;
+	max-height: 150px;
+}
+.rui-select span
+{
+	display: block;
+}
+.ruisel-scroll span
+{
+	cursor: pointer;
+}
+.ruisel-opt_over
+{
+	background: gray;
+}
+.custom_select_expanded
+{
+	z-index: 1000;
+}
+.ruisel-scroll
+{
+	/*overflow: auto;*/
+	
+	display: block;
+}
+#wrapper
+{
+	padding: 50px 0;
+	width: 987px;
+	margin: 0 auto;
+}
+h1
+{
+	font-size: 28px;
+	margin-bottom: 15px;
+}
+h2
+{
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+.rui-placeholder-container
+{
+	display: inline-block;
+	position: relative;
+}
+.rui-placeholder-text
+{
+	position: absolute;
+	left: 2px;
+	top: 1px;
+	display: block;
+}
+.rui-checkbox-done
+{
+	opacity: 0;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+	width: 14px;
+	height: 14px;
+	display: block;
+}
+.rui-checkbox-wrap
+{
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(img/box.png) 0 -14px no-repeat;
+	position: relative;
+	top: -1px;
+}
+.rui-checkbox-wrap
+{
+	background-position: 0 -14px;
+	background-position-y: -14px;
+}
+.rui-checkbox-checked
+{
+	background-position: 0 0;
+	background-position-y: 0;
+}
+.rui-checkbox-hover
+{
+	background-position-x: -14px;
+}
+.rui-checkbox-wrap.rui-checkbox-hover
+{
+	background-position: -14px -14px;
+}
+.rui-checkbox-checked.rui-checkbox-hover
+{
+	background-position: -14px -0px;
+}
+.rui-checkbox-focus
+{
+	background-position-x: -42px;
+}
+.rui-checkbox-wrap.rui-checkbox-focus
+{
+	background-position: -42px -14px;
+}
+.rui-checkbox-checked.rui-checkbox-focus
+{
+	background-position: -42px -0px;
+}
+.rui-checkbox-active
+{
+	background-position-x: -28px;
+}
+.rui-checkbox-wrap.rui-checkbox-active
+{
+	background-position: -28px -14px;
+}
+.rui-checkbox-checked.rui-checkbox-active
+{
+	background-position: -28px -0px;
+}
+.rui-checkbox-disabled
+{
+	background-position-x: -56px;
+}
+.rui-checkbox-wrap.rui-checkbox-disabled
+{
+	background-position: -56px -14px;
+}
+.rui-checkbox-checked.rui-checkbox-disabled
+{
+	background-position: -56px -0px;
+}
+.pad
+{
+	padding: 20px;
+}
+
+.rui-radio-done
+{
+	opacity: 0;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+	width: 15px;
+	height: 15px;
+	display: block;
+}
+.rui-radio-wrap
+{
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(img/radio.png) 0 -15px no-repeat;
+	position: relative;
+	top: -1px;
+}
+.rui-radio-wrap
+{
+	background-position: 0 -15px;
+	background-position-y: -15px;
+}
+.rui-radio-checked
+{
+	background-position: 0 0;
+	background-position-y: 0;
+}
+.rui-radio-hover
+{
+	background-position-x: -15px;
+}
+.rui-radio-wrap.rui-radio-hover
+{
+	background-position: -15px -15px;
+}
+.rui-radio-checked.rui-radio-hover
+{
+	background-position: -15px -0px;
+}
+.rui-radio-focus
+{
+	background-position-x: -45px;
+}
+.rui-radio-wrap.rui-radio-focus
+{
+	background-position: -45px -15px;
+}
+.rui-radio-checked.rui-radio-focus
+{
+	background-position: -45px -0px;
+}
+.rui-radio-active
+{
+	background-position-x: -30px;
+}
+.rui-radio-wrap.rui-radio-active
+{
+	background-position: -30px -15px;
+}
+.rui-radio-checked.rui-radio-active
+{
+	background-position: -30px -0px;
+}
+.rui-radio-disabled
+{
+	background-position-x: -60px;
+	cursor: default;
+}
+input[disabled]
+{
+	cursor: default;
+}
+.rui-radio-wrap.rui-radio-disabled
+{
+	background-position: -60px -15px;
+}
+.rui-radio-checked.rui-radio-disabled
+{
+	background-position: -60px -0px;
+}
+.rui-radio-label_checked,.rui-checkbox-label_checked
+{
+	color: #550000;
+	font-weight: bold;
+}
+.rui-radio-label_disabled,.rui-checkbox-label_disabled
+{
+	color: #CCC;
+	cursor: default;
+}
+#alax_frame
+{
+	margin-top: 20px;
+}
