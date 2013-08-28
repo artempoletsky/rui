@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+    <head>
         <title></title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="src/css/default.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="src/css/default.css" />
 
         <script type="text/javascript" src="src/js/jquery-1.6.2.min.js"></script>
         <script type="text/javascript" src="src/js/ui.js"></script>
@@ -37,32 +38,32 @@
 
         </script>
     </head>
-    <body class="gecko">
+    <body>
         <div id="wrapper">
             <div class="pad">
                 <h1>RUI - Replacer for User Interface</h1>
                 <h2>Placeholder example</h2>
-                <span class="rui-placeholder-container"><input class="rui-placeholder-done" placeholder="" type="text"><span class="rui-placeholder-text">name</span></span>
-                <hr>
+                <input type="text" placeholder="name" />
+                <hr />
                 <h2>Checkbox example</h2>
-                <label for="anonymous_input1"><span class="rui-checkbox-wrap"><input id="anonymous_input1" class="ruibox rui-checkbox-done" type="checkbox"></span> checkbox</label><br><br>
-                <label class="rui-checkbox-label_disabled" for="anonymous_input2"><span class="rui-checkbox-wrap rui-checkbox-disabled"><input id="anonymous_input2" disabled="disabled" class="ruibox rui-checkbox-done" type="checkbox"></span> disabled checkbox</label><br><br>
-                <label class="rui-checkbox-label_checked rui-checkbox-label_disabled" for="anonymous_input3"><span class="rui-checkbox-wrap rui-checkbox-checked rui-checkbox-disabled"><input id="anonymous_input3" disabled="disabled" class="ruibox rui-checkbox-done" checked="checked" type="checkbox"></span> disabled checked checkbox</label><br><br>
+                <label><input type="checkbox" class="ruibox" /> checkbox</label><br/><br/>
+                <label><input type="checkbox" disabled="disabled" class="ruibox" /> disabled checkbox</label><br/><br/>
+                <label><input type="checkbox" disabled="disabled" class="ruibox" checked="checked" /> disabled checked checkbox</label><br/><br/>
 
-                <span class="rui-checkbox-wrap"><input class="ruibox rui-checkbox-done" type="checkbox"></span> without label
-                <hr>
-                <br>
+                <input type="checkbox" class="ruibox" /> without label
+                <hr />
+                <br />
                 <h2>Radiobutton example</h2>
-                <label for="anonymous_input4"><span class="rui-radio-wrap"><input id="anonymous_input4" class="ruiradio rui-radio-done" name="radio" type="radio"></span> radio 1</label><br><br>
-                <label for="anonymous_input5"><span class="rui-radio-wrap"><input id="anonymous_input5" class="ruiradio rui-radio-done" name="radio" type="radio"></span> radio 2</label><br><br>
-                <label class="rui-radio-label_disabled" for="anonymous_input6"><span class="rui-radio-wrap rui-radio-disabled"><input id="anonymous_input6" class="ruiradio rui-radio-done" disabled="disabled" name="radio2" type="radio"></span> radio disabled</label><br><br>
-                <label class="rui-radio-label_checked rui-radio-label_disabled" for="anonymous_input7"><span class="rui-radio-wrap rui-radio-checked rui-radio-disabled"><input id="anonymous_input7" class="ruiradio rui-radio-done" checked="checked" disabled="disabled" name="radio2" type="radio"></span> radio checked disabled</label><br><br>
+                <label><input type="radio" class="ruiradio" name="radio" /> radio 1</label><br/><br/>
+                <label><input type="radio" class="ruiradio" name="radio" /> radio 2</label><br/><br/>
+                <label><input type="radio" class="ruiradio" disabled="disabled" name="radio2" /> radio disabled</label><br/><br/>
+                <label><input type="radio" class="ruiradio" checked="checked" disabled="disabled" name="radio2" /> radio checked disabled</label><br/><br/>
 
-                <span class="rui-radio-wrap"><input class="ruiradio rui-radio-done" name="radio" type="radio"></span> without label
-                <br>
-                <br>
+                <input type="radio" class="ruiradio" name="radio" /> without label
+                <br/>
+                <br/>
                 <span class="custom_select1">
-                    <select custom_select="custom_select0" class="ruisel rui-select-done">
+                    <select class="ruisel">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -87,21 +88,21 @@
                         <option>22</option>
                         <option selected="selected">23</option>
 
-                    </select><span id="custom_select0" class="rui-select" value="23"><b class="ruisf-rt"></b><b class="ruisf-lt"></b><b class="ruisf-rb"></b><b class="ruisf-lb"></b><a class="ruisel-clickable" href="#"></a><span class="ruisel-button"></span><span class="ruisel-face">23</span><span class="ruisel-select_options" style="display: none;"><span class="ruisel-scroll"><span class="" _value="1">1</span><span class="" _value="2">2</span><span class="" _value="3">3</span><span class="" _value="4">4</span><span class="" _value="5">5</span><span class="" _value="6">6</span><span class="" _value="7">7</span><span class="" _value="8">8</span><span class="" _value="9">9</span><span class="" _value="10">10</span><span class="" _value="11">11</span><span class="" _value="12">12</span><span class="" _value="13">13</span><span class="" _value="14">14</span><span class="" _value="15">15</span><span class="" _value="16">16</span><span class="" _value="17">17</span><span class="" _value="18">18</span><span class="" _value="19">19</span><span class="" _value="20">20</span><span class="" _value="21">21</span><span class="" _value="22">22</span><span class=" ruisel-opt_over" _value="23" selected="selected">23</span></span></span></span>
+                    </select>
                 </span>
                 <span class="custom_select1">
-                    <select custom_select="custom_select1" id="getval" class="ruisel rui-select-done">
-                        <option selected="selected" value="1">Кошка</option>
+                    <select id="getval" class="ruisel">
+                        <option value="1">Кошка</option>
                         <option value="2">Собака</option>
                         <option value="3">Птичка</option>
-                    </select><span id="custom_select1" class="rui-select" value="1"><b class="ruisf-rt"></b><b class="ruisf-lt"></b><b class="ruisf-rb"></b><b class="ruisf-lb"></b><a class="ruisel-clickable" href="#"></a><span class="ruisel-button"></span><span class="ruisel-face">Кошка</span><span class="ruisel-select_options" style="display: none;"><span class="ruisel-scroll"><span class=" ruisel-opt_over" _value="1" selected="selected">Кошка</span><span class="" _value="2">Собака</span><span class="" _value="3">Птичка</span></span></span></span>
+                    </select>
                 </span>
                 <button class="setval" value="1">Кошка</button>
                 <button class="setval" value="2">Собака</button>
                 <button class="setval" value="3">Птичка</button>
 
                 <button class="selrefresh">Поменять опционы</button>
-                <hr>
+                <hr />
                 <h2>AJAX example</h2>
 
                 <script type="text/javascript">
@@ -124,8 +125,9 @@
                 <div id="alax_frame">
 
                 </div>
-                <hr>
-                <pre>&lt;script type="text/javascript"&gt;
+                <hr />
+                <pre>
+&lt;script type="text/javascript"&gt;
 $(function(){
 	$('#load').click(function(){
 		$.get('ajax.html', function(data){
@@ -146,6 +148,5 @@ $(function(){
                 </pre>
             </div>
         </div>
-
-
-    </body></html>
+    </body>
+</html>
